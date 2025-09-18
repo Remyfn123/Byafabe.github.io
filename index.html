@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Benjamín Figueroa | Primera página</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="imagenes/Logo.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts (opcional para Montserrat) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tu CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse align-items-center" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/Logo.png" width="100" alt="Logo de la página">
+        </a>
+
+        <ul class="navbar-nav d-flex justify-content-center align-items-center ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#casas">Casas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#departamentos">Departamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Título global (opcional) -->
+  <h2 class="titulo-principal">Nuestras Propiedades Destacadas</h2>
+
+  <!-- Sección Home -->
+  <section id="home" class="section-block">
+    <div class="card section-card card-home">
+      <img src="imagenes/Terreno.webp" class="card-img-top" alt="Bienvenida">
+      <div class="card-body">
+        <h5 class="card-title">Terrenos en venta</h5>
+        <p class="card-text">Explora nuestras propiedades destacadas y encuentra tu próximo hogar.</p>
+        <a href="#casas" class="btn btn-primary">Ver Casas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Casas -->
+  <section id="casas" class="section-block">
+    <div class="card section-card card-casas">
+      <img src="imagenes/Casas.jpg" class="card-img-top" alt="Casa en venta">
+      <div class="card-body">
+        <h5 class="card-title">Casas en Venta/Arriendo</h5>
+        <p class="card-text">Casas amplias y bien ubicadas para diferentes presupuestos.</p>
+        <a href="#" class="btn btn-primary">Ver listado</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Departamentos -->
+  <section id="departamentos" class="section-block">
+    <div class="card section-card card-departamentos">
+      <img src="imagenes/Departamentos.jpg" class="card-img-top" alt="Departamento en venta">
+      <div class="card-body">
+        <h5 class="card-title">Departamentos</h5>
+        <p class="card-text">Modernos y bien conectados, listos para ti.</p>
+        <a href="#" class="btn btn-primary">Ver listado</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="section-block">
+    <div class="card section-card card-contacto">
+      <img src="imagenes/WhatsApp.svg.webp" class="card-img-top" alt="Contacto">
+      <div class="card-body">
+        <h5 class="card-title">Contacto</h5>
+        <p class="card-text">¿Tienes dudas? Escríbenos y te ayudamos a encontrar tu propiedad ideal.</p>
+        <a href="mailto:contacto@tusitio.cl" class="btn btn-primary">Escríbenos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Activa el link clickeado -->
+  <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function() {
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
