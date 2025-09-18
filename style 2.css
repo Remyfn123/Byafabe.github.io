@@ -1,0 +1,67 @@
+/* Global */
+html { scroll-behavior: smooth; }
+body { font-family: 'Montserrat', sans-serif; color:#333; background:#fff; }
+
+/* Navbar */
+.navbar { padding:1rem; background:#FCF2FF; }
+.navbar .nav-link{
+  font-size:1.3rem; font-weight:500; color:#333; transition:all .2s;
+}
+.navbar .nav-link.active{
+  font-size:1.5rem; font-weight:700; color:#000;
+}
+.navbar-collapse{
+  align-items:center; justify-content:space-between;
+  margin-top:20px; margin-bottom:10px;
+}
+
+/* Título principal */
+.titulo-principal{
+  margin-top: 100px;
+  margin-bottom:50px; font-weight:600; font-size:2.5rem; color:#4B0082; text-align:center;
+}
+@media (max-width: 992px){ .titulo-principal{ font-size:2rem; } }
+@media (max-width: 576px){ .titulo-principal{ font-size:1.5rem; } }
+
+/* Secciones */
+.section-block{ padding:4rem 0; }
+
+/* Cards (tamaño general) */
+.section-card{
+  width:18rem;            /* 👈 cambia aquí el ancho general */
+  margin:0 auto;
+  border-radius:12px; overflow:hidden;
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.section-card:hover{ transform:scale(1.05); box-shadow:0 8px 20px rgba(0,0,0,.15); }
+.section-card .card-body{ text-align:center; }
+
+/* Tamaños por card (opcional, quita si no lo necesitas) */
+.card-home{ width:60rem; }
+.card-casas{ width:60rem; }
+.card-departamentos{ width:60rem; }
+.card-contacto{ width:40rem; }
+
+/* Estilos por card (colores de ejemplo; cámbialos a gusto) */
+.card-home{ background:#f9f0ff; border:2px solid #d0a6f5; }
+.card-home .card-title{ color:#6a0dad; }
+.card-home .btn{ background:#6a0dad; border:none; }
+.card-home .btn:hover{ background:#500a85; }
+
+.card-casas{ background:#fff5f5; border:2px solid #f5a6a6; }
+.card-casas .card-title{ color:#b22222; }
+.card-casas .btn{ background:#b22222; border:none; }
+.card-casas .btn:hover{ background:#8b1a1a; }
+
+.card-departamentos{ background:#f0f9ff; border:2px solid #a6d0f5; }
+.card-departamentos .card-title{ color:#005f99; }
+.card-departamentos .btn{ background:#005f99; border:none; }
+.card-departamentos .btn:hover{ background:#004070; }
+
+.card-contacto{ background:#f5fff0; border:2px solid #a6f5a6; }
+.card-contacto .card-title{ color:#006400; }
+.card-contacto .btn{ background:#006400; border:none; }
+.card-contacto .btn:hover{ background:#004d00; }
+
+/* Responsive */
+@media (max-width:767px){ .navbar-brand{ display:none; } }
